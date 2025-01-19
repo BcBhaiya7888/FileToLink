@@ -24,7 +24,7 @@ URL = environ.get("URL", "")
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('-1002287151066', '1002287151066'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('6124872064').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('6124872064', '6124872064').split()]
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bcbhaiya700:Y4CxLBKcCaGP6YX1@ngtea.3anph.mongodb.net/?retryWrites=true&w=majority&appName=Ngtea")
